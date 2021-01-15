@@ -10,7 +10,7 @@ package strategy.pattern.character;
 public class GameSimulator {
 	
 	public static void main(String[] args) {
-		BlackWidow blackWidow = new BlackWidow();
+		final Character blackWidow = new BlackWidow();
 		blackWidow.fight();
 		blackWidow.loadWeapon();
 		blackWidow.setWeaponBehavior(new BowAndArrowBehaviorImpl());
